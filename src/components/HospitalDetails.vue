@@ -18,6 +18,7 @@
 			<div class="jieshaoright">
 				<p>认证医师：50位</p>
 				<p>科室分类：儿童齿科、牙齿正畸、牙齿美白、美白修复、种植牙体</p>
+				<p>特色技术：abc德国仿生技术</p>
 				<p>&emsp;&emsp;地址：北京市朝阳区华贸商业街L801A</p>
 				<p>联系电话：010-56562356</p>
 				<p>营业时间：9：00-18：00*24H</p>
@@ -80,27 +81,15 @@
 			</div>
 			<div class="group">
 				<h5>该店团购</h5>
-				<i class="iconfont left">&#xe601;</i>
-				<div class="box">
-					图片位置
-				</div>
-				<i class="iconfont right">&#xe61f;</i>
-			</div>
-			<div class="doctor">
-				<h5>认证医师</h5>
-				<div class="iconLeft"><i class="iconfont">&#xe601;</i></div>
-				<div class="iconCenter">
-					<ul>
-						<li>111</li>
-						<li>222</li>
-						<li>333</li>
+					<i class="iconfont left">&#xe601;</i>
+					<ul class="ulImg">
+						<li>第一张图</li>
+						<li>第二张图</li>
+						<li>第三张图</li>
+						<li>第四张图</li>
 					</ul>
-				</div>
-				<div class="iconRight"><i class="iconfont">&#xe61f;</i></div>
+					<i class="iconfont right">&#xe61f;</i>
 			</div>
-			<h5>其他分店</h5>
-			<p class="Other">思迈尔口腔（双井店）</p>
-
 	</div>
 	<Footerr></Footerr>
   </div>
@@ -238,75 +227,25 @@ export default {
 		}
 		.group{
 			width:12rem;
-			height:1.6rem;
+			height:2rem;
 			background:#eee;
-			margin-bottom:.2rem;
-			h5{
-				margin:0;
-				margin-bottom:.1rem;
-			}
-			i{
-					font-size:24px;
-					font-weight:600;
+				.ulImg{
+					width:11rem;
+					height:1.24rem;
+					background:blue;
 					display:inline-block;
-					width:20px;
-					height:20px;
-					vertical-align:middle;
-					line-height:1rem;
-				}
-			.box{
-				width:11.35rem;
-				height:1.24rem;
-				display:inline-block;
-
-				
-			}
-		}
-		.doctor{
-			width:12rem;
-			height:1.47rem;
-			background:red;
-			margin-bottom:.6rem;
-			h5{
-				margin:0 
-			}
-			.iconLeft,.iconRight{
-				width: 24px;
-				height:69px;
-				background:#5fc2fb;
-				display:inline-block;
-				i{
-					display:inline-block;
-					font-size:26px;
-					font-weight:600;
-					vertical-align:middle;
-					line-height:69px;
-					color:#FFF;
-				}
-
-			}
-			.iconCenter{
-				display:inline-block;
-				width:11.425rem;
-				ul{
-					height:1.09rem;
+					margin:0;
 					li{
-						margin:0 auto;
 						float:left;
-						list-style:none;
-						width:1.7rem;
-						height:1.09rem;
-						background:blue;
-						margin:0 10px;
 					}
 				}
-				
-
-			}
+				i{
+					font-size:24px;
+					font-weight:600;
+					cursor:pointer;
+					height:0 auto;
+				}
 		}
-		.Other{
-			color:#5fc2fb;
-		}	
 
 }
 </style>

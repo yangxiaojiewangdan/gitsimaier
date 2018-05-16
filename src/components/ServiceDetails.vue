@@ -62,17 +62,7 @@
 			<div class="imgBox">
 				<i class="iconfont left" @click="left">&#xe601;</i>
 				<div class="bannerBox">
-					<ul id="otherui">
-						<li id="otherli"><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-						<li><img src="../assets/img/cart.png"></li>
-					</ul>
+					 图片位置
 				</div>
 				<i class="iconfont right" @click="right">&#xe61f;</i>
 			</div>
@@ -168,8 +158,6 @@
 </template>
 
 <script>
-//设置一个步数
-var now = 0;
 import axios from 'axios';
 import {formatDate} from '../assets/js/date.js';
 import qs from 'qs';
@@ -177,7 +165,6 @@ import Header from '../components/Header'
 import Nav from '../components/Nav'
 import Footerr from '../components/Footerr'
 import Anchors from '../components/Anchors'
-
 export default {
   name: 'ServiceDetails',
   components:{
@@ -202,7 +189,6 @@ export default {
       detailsList:[],
       openid:"",
       orderNum:"",
-
     }
   },	
   methods:{
@@ -225,21 +211,12 @@ export default {
 	destroyed () {
   		window.removeEventListener('scroll', this.handleScroll)
 	},
-	
 	//点击图标左右移动
 	left(){
-
+		alert("你好")
 	},
 	right(){
-		var liWidth = document.getElementById("otherli").offsetWidth 
-		var n = document.querySelectorAll("#otherui>li")
-		console.log(n)
-		var ulWidth = document.getElementById("otherui")
-		//5.点击now++
-		now==n.length?now=n.length:now++
-		ulWidth.style.transform = translateX(""+ -liWidth * now +"px")
-		console.log(now)
-		
+		alert("不好")
 	},
 	// jia(){
 	// 	this.n++
@@ -466,28 +443,11 @@ export default {
 			}
 		}
 		.imgBox{
-			width:97%;
+			width:96%;
 			float:right;
 			.bannerBox{
 				display:inline-block;
-				ul{
-					margin:0;
-					padding:0;
-					width:1030px;
-					height:1.24rem;
-					overflow:hidden;
-					background:red;
-					li{
-						list-style:none;
-						width:253.5px;
-						height:1.24rem;
-						display:inline-block;
-						img{
-							width:100%;
-							height:100%;
-						}
-					}
-				}
+				background:red;
 			}
 			.left,.right{
 				font-size:30px;

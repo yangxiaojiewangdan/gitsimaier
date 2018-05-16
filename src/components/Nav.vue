@@ -10,10 +10,10 @@
 		<router-link to="/Doctor">
 			<li>医生</li>
 		</router-link>
-		<router-link to="/Video">
+		<router-link to="/Login">
 			<li>视频</li>
 		</router-link>
-		<router-link to="/ByStages">
+		<router-link to="/Login">
 			<li>分期</li>
 		</router-link>
   	</ul>

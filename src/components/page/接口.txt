@@ -1,0 +1,8 @@
+注册的接口
+      滑块滑动  ：    /api/register_api/verification    参  数  mobile：手机号
+	动态验证码  :     /api/sms_api/createSms          参  数  mobile：手机号
+	注         册   :    /api/register_api/register          参  数  mobile :手机号   postcode：动态验证码   user_style :  (0:用户；1：医生；2：医院)
+
+	
+
+

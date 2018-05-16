@@ -272,10 +272,6 @@ export default {
   }
 </script>
 <style  lang="scss">
-a{
-  text-decoration: none;
-  color:#fff;
-}
 	.header{
 		width:100%;
 		height:0.6rem;
@@ -320,5 +316,9 @@ a{
       padding-top:0.08rem;
 		}
 	}
+}
+a{
+  text-decoration: none;
+  color:#fff;
 }
 </style>

@@ -2,23 +2,23 @@
   <div class="register">
   	<Passcheck></Passcheck>
   	<div class="contentbox">
-	  	<div class="content1" v-for="item in listuser">
-	  		<router-link to="/Reguser">
+	  	<div class="content1" v-for="(item,index) in listuser" :key="index" @click="pu(0)">
+	  		<!-- <router-link to="/Reguser"> -->
 	  			<img :src="GLOBAL.url+item.image">
 	  			<p class="p1">{{item.content}}</p>
-			</router-link>
+			<!-- </router-link> -->
 	  	</div>
-	  	<div class="content2" v-for="item in listhospital">
-	  		<router-link to="/Reguser">
+	  	<div class="content2" v-for="(item,index) in listhospital" :key="index" @click="pu(1)">
+	  		<!-- <router-link to = "/Reguser"> -->
 	  			<img :src="GLOBAL.url+item.image">
 	  			<p>{{item.content}}</p>
-			</router-link>
+			<!-- </router-link> -->
 	  	</div>
-	  	<div class="content3" v-for="item in listdoctor">
-	  		<router-link to="/Reguser">
+	  	<div class="content3" v-for="(item,index) in listdoctor" :key="index" @click="pu(2)">
+	  		<!-- <router-link to="/Reguser"> -->
 	  			<img :src="GLOBAL.url+item.image">
 	  			<p>{{item.content}}</p>
-			</router-link>
+			<!-- </router-link> -->
 	  	</div>
   </div>
   </div>
@@ -38,7 +38,7 @@ export default {
       listhospital:[],
       listdoctor:[]
     }
-  },
+	},
   mounted(){
       axios.get(this.GLOBAL.url+"/api/ad_api/personalloginpic")
       .then((res)=>{
@@ -58,7 +58,13 @@ export default {
         this.listdoctor = res.data.data;
         console.log(this.listdoctor)
       })         
-  }
+	},
+	methods:{
+		pu:function(i){
+		this.$router.push({path:"/Reguser",query:{id:i}})
+		sessionStorage.setItem("id",i)
+	}
+}
 }
 </script>
 
