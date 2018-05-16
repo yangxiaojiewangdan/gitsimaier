@@ -1,5 +1,5 @@
 <script>
-const url = 'http://192.168.1.158';
+const url = 'http://dp.kydianping.com';
   export default
   {
     url

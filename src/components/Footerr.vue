@@ -43,7 +43,7 @@
 <script>
 import axios from 'axios';
 export default {
-  name: 'footer',
+  name: 'footerr',
   data() {
     return {
     	

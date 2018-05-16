@@ -7,17 +7,22 @@ import Reguser from '@/components/Reguser'              //注册用户
 import Hospital from '@/components/Hospital'            //医院
 import HospitalDetails from '@/components/HospitalDetails'  //医院详情页
 import Doctor from '@/components/Doctor'                //医生
+import DoctorDetails from '@/components/DoctorDetails'  //医生详情
 import Personal from '@/components/Personal'            //个人中心
 import Personaldata from '@/components/Personaldata'    //个人资料
 import Merchant from '@/components/Merchant'            //商户
 import Help from '@/components/Help'                    //帮助
 import Service from '@/components/Service'              //服务
 import ServiceDetails from '@/components/ServiceDetails'  //服务详情页  
+import Video from '@/components/Video'                    //视频
+import VideoDetails from '@/components/VideoDetails'    //视频详情
 import Cart from '@/components/Cart'                    //购物车
-import Order  from '@/components/Order '           
+import Order  from '@/components/Order '                //订单页
 import Buy from '@/components/Buy'                      //立即购买
 import Buypayment from '@/components/Buypayment'        //支付
-import BuyComplete from '@/components/BuyComplete'        //购买完成
+import BuyComplete from '@/components/BuyComplete'      //购买完成
+import ByStages from '@/components/ByStages'            //分期
+import ByStagesDetails from '@/components/ByStagesDetails'    //分期详情   
 Vue.use(Router)
 
 export default new Router({
@@ -68,6 +73,11 @@ export default new Router({
       component: Doctor
     },
     {
+      path: '/DoctorDetails',//医生详情入口
+      name: 'DoctorDetails',
+      component: DoctorDetails
+    },
+    {
       path: '/Merchant',//商户服务
       name: 'Merchant',
       component: Merchant
@@ -91,6 +101,26 @@ export default new Router({
       path: '/ServiceDetails/:fid',//服务详情页
       name: 'ServiceDetails',
       component: ServiceDetails
+    },
+    {
+      path: '/Video',//视频
+      name: 'Video',
+      component: Video
+    },
+    {
+      path: '/VideoDetails',//视频详情页
+      name: 'VideoDetails',
+      component: VideoDetails
+    },
+    {
+      path: '/ByStages',//分期
+      name: 'ByStages',
+      component: ByStages
+    },
+    {
+      path: '/ByStagesDetails',//分期详情页
+      name: 'ByStagesDetails',
+      component: ByStagesDetails
     },
     {
       path: '/Buy',//立即购买

@@ -16,10 +16,7 @@ body,html{
   padding:0;
   font-size:16px;
 }
-a{
-  text-decoration: none;
-  color:#fff;
-}
+/*删掉a标签全局颜色*/
 #app {
   height: 100%;
 }
